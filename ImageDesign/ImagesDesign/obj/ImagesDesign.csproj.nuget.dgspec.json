@@ -1,0 +1,387 @@
+{
+  "format": 1,
+  "restore": {
+    "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\ImagesDesign\\ImagesDesign.csproj": {}
+  },
+  "projects": {
+    "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Common\\Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\s-sys\\.nuget\\packages\\",
+        "outputPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\s-sys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\DataContext\\DataContext.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\DataContext\\DataContext.csproj",
+        "projectName": "DataContext",
+        "projectPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\DataContext\\DataContext.csproj",
+        "packagesPath": "C:\\Users\\s-sys\\.nuget\\packages\\",
+        "outputPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\DataContext\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\s-sys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Repository\\Repository.csproj": {
+                "projectPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Repository\\Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\ImagesDesign\\ImagesDesign.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\ImagesDesign\\ImagesDesign.csproj",
+        "projectName": "ImagesDesign",
+        "projectPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\ImagesDesign\\ImagesDesign.csproj",
+        "packagesPath": "C:\\Users\\s-sys\\.nuget\\packages\\",
+        "outputPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\ImagesDesign\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\s-sys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\DataContext\\DataContext.csproj": {
+                "projectPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\DataContext\\DataContext.csproj"
+              },
+              "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Service\\Service.csproj": {
+                "projectPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Service\\Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\s-sys\\.nuget\\packages\\",
+        "outputPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\s-sys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\s-sys\\.nuget\\packages\\",
+        "outputPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\s-sys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Common\\Common.csproj": {
+                "projectPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Common\\Common.csproj"
+              },
+              "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Repository\\Repository.csproj": {
+                "projectPath": "L:\\שנה ב\\מהט\\Full Stack\\אתי יונגרייז\\FinalProject\\Backend\\ImagesDesign\\Repository\\Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\FinalProject\\Backend\\ImageDesign\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0359E68-E850-4379-BF29-0B980175B200}|ImagesDesign\\ImageDesign.csproj|g:\\finalproject\\backend\\imagedesign\\imagesdesign\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0359E68-E850-4379-BF29-0B980175B200}|ImagesDesign\\ImageDesign.csproj|solutionrelative:imagesdesign\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C62CFBF-7AB9-45EF-AA31-1314D7F67218}|Service\\Service.csproj|g:\\finalproject\\backend\\imagedesign\\service\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C62CFBF-7AB9-45EF-AA31-1314D7F67218}|Service\\Service.csproj|solutionrelative:service\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C19D21-6B50-42E5-99C0-9EB59F8BE97C}|Repository\\Repository.csproj|g:\\finalproject\\backend\\imagedesign\\repository\\repository\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C19D21-6B50-42E5-99C0-9EB59F8BE97C}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0359E68-E850-4379-BF29-0B980175B200}|ImagesDesign\\ImageDesign.csproj|g:\\finalproject\\backend\\imagedesign\\imagesdesign\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0359E68-E850-4379-BF29-0B980175B200}|ImagesDesign\\ImageDesign.csproj|solutionrelative:imagesdesign\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B49BEB9-F086-4874-B3C1-DC0A2DC49697}|Common\\Common.csproj|g:\\finalproject\\backend\\imagedesign\\common\\dto\\imagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B49BEB9-F086-4874-B3C1-DC0A2DC49697}|Common\\Common.csproj|solutionrelative:common\\dto\\imagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C19D21-6B50-42E5-99C0-9EB59F8BE97C}|Repository\\Repository.csproj|g:\\finalproject\\backend\\imagedesign\\repository\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C19D21-6B50-42E5-99C0-9EB59F8BE97C}|Repository\\Repository.csproj|solutionrelative:repository\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C62CFBF-7AB9-45EF-AA31-1314D7F67218}|Service\\Service.csproj|g:\\finalproject\\backend\\imagedesign\\service\\mapprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C62CFBF-7AB9-45EF-AA31-1314D7F67218}|Service\\Service.csproj|solutionrelative:service\\mapprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C19D21-6B50-42E5-99C0-9EB59F8BE97C}|Repository\\Repository.csproj|g:\\finalproject\\backend\\imagedesign\\repository\\entity\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C19D21-6B50-42E5-99C0-9EB59F8BE97C}|Repository\\Repository.csproj|solutionrelative:repository\\entity\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B49BEB9-F086-4874-B3C1-DC0A2DC49697}|Common\\Common.csproj|g:\\finalproject\\backend\\imagedesign\\common\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B49BEB9-F086-4874-B3C1-DC0A2DC49697}|Common\\Common.csproj|solutionrelative:common\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0359E68-E850-4379-BF29-0B980175B200}|ImagesDesign\\ImageDesign.csproj|g:\\finalproject\\backend\\imagedesign\\imagesdesign\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0359E68-E850-4379-BF29-0B980175B200}|ImagesDesign\\ImageDesign.csproj|solutionrelative:imagesdesign\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "G:\\FinalProject\\Backend\\ImageDesign\\Repository\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repository\\UserRepository.cs",
+              "ToolTip": "G:\\FinalProject\\Backend\\ImageDesign\\Repository\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Repository\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwBQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T10:12:11.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImageService.cs",
+              "DocumentMoniker": "G:\\FinalProject\\Backend\\ImageDesign\\Service\\Services\\ImageService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\ImageService.cs",
+              "ToolTip": "G:\\FinalProject\\Backend\\ImageDesign\\Service\\Services\\ImageService.cs",
+              "RelativeToolTip": "Service\\Services\\ImageService.cs",
+              "ViewState": "AQIAAFAAAAAAzczMzMwwwFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:57:57.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ImageRepository.cs",
+              "DocumentMoniker": "G:\\FinalProject\\Backend\\ImageDesign\\Repository\\Repository\\ImageRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repository\\ImageRepository.cs",
+              "ToolTip": "G:\\FinalProject\\Backend\\ImageDesign\\Repository\\Repository\\ImageRepository.cs",
+              "RelativeToolTip": "Repository\\Repository\\ImageRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAQwBIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:57:01.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Image.cs",
+              "DocumentMoniker": "G:\\FinalProject\\Backend\\ImageDesign\\Repository\\Entity\\Image.cs",
+              "RelativeDocumentMoniker": "Repository\\Entity\\Image.cs",
+              "ToolTip": "G:\\FinalProject\\Backend\\ImageDesign\\Repository\\Entity\\Image.cs",
+              "RelativeToolTip": "Repository\\Entity\\Image.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:30:06.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ImageDto.cs",
+              "DocumentMoniker": "G:\\FinalProject\\Backend\\ImageDesign\\Common\\Dto\\ImageDto.cs",
+              "RelativeDocumentMoniker": "Common\\Dto\\ImageDto.cs",
+              "ToolTip": "G:\\FinalProject\\Backend\\ImageDesign\\Common\\Dto\\ImageDto.cs",
+              "RelativeToolTip": "Common\\Dto\\ImageDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:22:10.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "G:\\FinalProject\\Backend\\ImageDesign\\Common\\Dto\\UserDto.cs",
+              "RelativeDocumentMoniker": "Common\\Dto\\UserDto.cs",
+              "ToolTip": "G:\\FinalProject\\Backend\\ImageDesign\\Common\\Dto\\UserDto.cs",
+              "RelativeToolTip": "Common\\Dto\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:22:04.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MapProfile.cs",
+              "DocumentMoniker": "G:\\FinalProject\\Backend\\ImageDesign\\Service\\MapProfile.cs",
+              "RelativeDocumentMoniker": "Service\\MapProfile.cs",
+              "ToolTip": "G:\\FinalProject\\Backend\\ImageDesign\\Service\\MapProfile.cs",
+              "RelativeToolTip": "Service\\MapProfile.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:21:51.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ImageController.cs",
+              "DocumentMoniker": "G:\\FinalProject\\Backend\\ImageDesign\\ImagesDesign\\Controllers\\ImageController.cs",
+              "RelativeDocumentMoniker": "ImagesDesign\\Controllers\\ImageController.cs",
+              "ToolTip": "G:\\FinalProject\\Backend\\ImageDesign\\ImagesDesign\\Controllers\\ImageController.cs",
+              "RelativeToolTip": "ImagesDesign\\Controllers\\ImageController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAYwBcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T11:07:42.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\FinalProject\\Backend\\ImageDesign\\ImagesDesign\\Program.cs",
+              "RelativeDocumentMoniker": "ImagesDesign\\Program.cs",
+              "ToolTip": "G:\\FinalProject\\Backend\\ImageDesign\\ImagesDesign\\Program.cs",
+              "RelativeToolTip": "ImagesDesign\\Program.cs",
+              "ViewState": "AQIAABMAAAAANDMzMzMLwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T10:45:59.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "G:\\FinalProject\\Backend\\ImageDesign\\ImagesDesign\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ImagesDesign\\Controllers\\UserController.cs",
+              "ToolTip": "G:\\FinalProject\\Backend\\ImageDesign\\ImagesDesign\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ImagesDesign\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T11:07:41.622Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
