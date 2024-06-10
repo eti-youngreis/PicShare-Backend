@@ -29,12 +29,16 @@ namespace Service.Services
             {
                 return null;
             }
+
             var imagePath = await UploadImageAsync(entity.Image);
             entity.ImagePath = imagePath;
+
+            // לא נצטרך לשנות את הקוד הבא, משום שהמיקום של התמונות נשמר ככתובת URL
             var imageEntity = mapper.Map<Image>(entity);
             await repository.AddAsync(imageEntity);
             return mapper.Map<ImageDto>(imageEntity);
         }
+
 
         public async Task<ImageDto?> DeleteAsync(int id)
         {
@@ -85,7 +89,13 @@ namespace Service.Services
             {
                 await image.CopyToAsync(stream);
             }
-            return filePath;
+
+            // החזרת כתובת ה-URL של התמונה
+            var baseUrl = "https://localhost:44357"; // שינוי זה ישונה לפי כתובת השרת שלך
+            var imageUrl = $"{baseUrl}/images/{uniqueFileName}";
+
+            return imageUrl;
         }
+
     }
 }

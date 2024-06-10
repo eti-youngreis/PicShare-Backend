@@ -9,8 +9,6 @@ namespace Repository
     {
         public static IServiceCollection AddRepository(this IServiceCollection services)
         {
-            services.AddScoped<IRepository<DesignedImage>, DesignedImageRepository>();
-            services.AddScoped<IRepository<DesignTemplate>, DesignTemplateRepository>();
             services.AddScoped<IRepository<Image>, ImageRepository>();
             services.AddScoped<IRepository<User>, UserRepository>();
             return services;

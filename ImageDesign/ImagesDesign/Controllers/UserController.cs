@@ -2,8 +2,10 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Repository.Repository;
 using Service.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
+using System.Reflection.Metadata.Ecma335;
 using System.Security.Claims;
 using System.Text;
 
@@ -24,7 +26,22 @@ namespace ImagesDesign.Controllers
             this._config = _config;
             this.service = service;
         }
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> Get()
+        {
 
+            List<SecureUser> secureUsers = new();
+            var users = await service.GetAllAsync();
+            users.ForEach(user => secureUsers.Add(
+                new SecureUser
+                {
+                    ProfileImagePath = user.ProfileImagePath,
+                    Id = user.Id ?? 0,
+                    FullName = user.FullName,
+                    Email = user.Email
+                }));
+            return Ok(secureUsers);
+        }
         [HttpPost("SignIn")]
         public async Task<IActionResult?> SignIn([FromBody] UserLogin userLogin)
         {
@@ -38,16 +55,9 @@ namespace ImagesDesign.Controllers
         }
         // POST api/<UserController>
         [HttpPost("SignUp")]
-        public async Task<int?> SignUp([FromBody] UserDto entity)
+        public async Task<int?> SignUp([FromForm] UserDto entity)
         {
             return (await service.AddAsync(entity))?.Id;
-        }
-
-        // PUT api/<UserController>/5
-        [HttpPut("{id}")]
-        public async Task<UserDto> Put(int id, UserDto entity)
-        {
-            return await service.UpdateAsync(id, entity);
         }
 
         // DELETE api/<UserController>/5
@@ -55,6 +65,17 @@ namespace ImagesDesign.Controllers
         public async Task<UserDto?> Delete(int id)
         {
             return await service.DeleteAsync(id);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult?> UpdateProfile(int id, [FromForm] UserUpdate entity)
+        {
+            var userToUpdate = await service.GetByIdAsync(id);
+            if (userToUpdate == null)
+                return NoContent();
+            userToUpdate.FullName = entity.FullName ?? userToUpdate.FullName;
+            userToUpdate.ProfileImage = entity.ProfileImage ?? userToUpdate?.ProfileImage;
+            return Ok(await service.UpdateAsync(id, userToUpdate));
         }
 
         private async Task<UserDto?> Authenticate(UserLogin userLogin)
@@ -74,7 +95,7 @@ namespace ImagesDesign.Controllers
             var claims = new[] {
             new Claim(ClaimTypes.Name,user.FullName),
             new Claim(ClaimTypes.Email,user.Email),
-            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.NameIdentifier, (user.Id??0).ToString()),
             new Claim(ClaimTypes.UserData,user.Password)
             };
             var token = new JwtSecurityToken(_config["Jwt:Issuer"], _config["Jwt:Audience"],
@@ -83,19 +104,23 @@ namespace ImagesDesign.Controllers
                 signingCredentials: credentials);
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
- 
+
         [HttpGet]
         [Authorize]
-        public object? GetByToken()
+        public async Task<SecureUser?> GetByToken()
         {
-            var identity = HttpContext.User.Identity as ClaimsIdentity;
-            if (identity != null)
+            if (HttpContext.User.Identity is ClaimsIdentity identity)
             {
                 var userClaim = identity.Claims;
-                return new  {
-                    FullName = userClaim.FirstOrDefault(x=>x.Type==ClaimTypes.Name)!.Value,
-                    Id = int.Parse(userClaim.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)!.Value),
-                };
+                var user = await service.GetByIdAsync(int.Parse(userClaim.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)!.Value));
+                if (user != null)
+                    return new SecureUser
+                    {
+                        ProfileImagePath = user.ProfileImagePath,
+                        Email = user.Email,
+                        Id = user.Id ?? 0,
+                        FullName = user.FullName
+                    };
             }
             return null;
         }

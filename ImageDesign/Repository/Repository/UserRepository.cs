@@ -51,10 +51,19 @@ namespace Repository.Repository
 
         public async Task<User?> UpdateAsync(int id, User entity)
         {
-            entity.Id = id;
-            context.Users.Update(entity);
+            var existingEntity = await context.Users.FindAsync(id);
+            if (existingEntity == null)
+            {
+                return null;
+            }
+
+            existingEntity.FullName = entity.FullName; 
+            existingEntity.ProfileImagePath = entity.ProfileImagePath;
+
             await context.Save();
-            return entity;
+            return existingEntity;
         }
+
+
     }
 }

@@ -41,7 +41,7 @@ namespace ImagesDesign.Controllers
             {
                 return BadRequest("Invalid file");
             }
-            if (!data.Image.ContentType.StartsWith("image/"))
+            if (!(data.Image.ContentType.StartsWith("image/")||data.Image.ContentType.StartsWith("png/")))
             {
                 return BadRequest("Uploaded file is not an image");
             }
