@@ -1,1 +1,12 @@
-.vs
+
+# ASP.NET Core
+bin/
+obj/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+**/*.jpg
+**/*.gif
+
+.vs/
