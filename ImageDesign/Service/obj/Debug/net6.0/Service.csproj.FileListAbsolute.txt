@@ -1,5 +1,0 @@
-L:\שנה ב\מהט\Full Stack\אתי יונגרייז\C#++\ImagesDesign\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
-L:\שנה ב\מהט\Full Stack\אתי יונגרייז\C#++\ImagesDesign\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
-L:\שנה ב\מהט\Full Stack\אתי יונגרייז\C#++\ImagesDesign\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
-L:\שנה ב\מהט\Full Stack\אתי יונגרייז\C#++\ImagesDesign\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
-L:\שנה ב\מהט\Full Stack\אתי יונגרייז\C#++\ImagesDesign\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
