@@ -1,18 +1,13 @@
 ﻿using AutoMapper;
 using Common.Dto;
-using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Http;
 using Repository.Entity;
 using Repository.Interfaces;
-using Repository.Repository;
 using Service.Interfaces;
-using System.Collections.Generic;
-using System.IO;
-using System.Threading.Tasks;
 
 namespace Service.Services
 {
-    public class ImageService : IService<ImageDto>
+    public class ImageService : IImageService
     {
         private readonly IRepository<Image> repository;
         private readonly IMapper mapper;
@@ -33,7 +28,6 @@ namespace Service.Services
             var imagePath = await UploadImageAsync(entity.Image);
             entity.ImagePath = imagePath;
 
-            // לא נצטרך לשנות את הקוד הבא, משום שהמיקום של התמונות נשמר ככתובת URL
             var imageEntity = mapper.Map<Image>(entity);
             await repository.AddAsync(imageEntity);
             return mapper.Map<ImageDto>(imageEntity);
@@ -90,8 +84,7 @@ namespace Service.Services
                 await image.CopyToAsync(stream);
             }
 
-            // החזרת כתובת ה-URL של התמונה
-            var baseUrl = "https://localhost:44357"; // שינוי זה ישונה לפי כתובת השרת שלך
+            var baseUrl = "https://localhost:44357"; 
             var imageUrl = $"{baseUrl}/images/{uniqueFileName}";
 
             return imageUrl;

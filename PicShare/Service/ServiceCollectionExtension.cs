@@ -11,8 +11,8 @@ namespace Service
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             services.AddRepository();
-            services.AddScoped<IService<ImageDto>, ImageService>();
-            services.AddScoped<IService<UserDto>, UserService>();
+            services.AddScoped<IImageService, ImageService>();
+            services.AddScoped<IUserService, UserService>();
             services.AddAutoMapper(typeof(MapProfile));
             return services;
         }

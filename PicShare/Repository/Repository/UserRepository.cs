@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Repository.Entity;
 using Repository.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Repository.Repository
 {
@@ -57,7 +52,7 @@ namespace Repository.Repository
                 return null;
             }
 
-            existingEntity.FullName = entity.FullName; 
+            existingEntity.FullName = entity.FullName;
             existingEntity.ProfileImagePath = entity.ProfileImagePath;
 
             await context.Save();

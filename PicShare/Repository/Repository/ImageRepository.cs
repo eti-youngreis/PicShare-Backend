@@ -28,10 +28,12 @@ namespace Repository.Repository
             return entity;
 
         }
+
         public async Task<User?> GetUser(int id)
         {
             return await context.Users.FirstOrDefaultAsync(x => x.Id == id);
         }
+
         public async Task<List<Image>> GetAllAsync()
         {
             return await context.Images.ToListAsync();

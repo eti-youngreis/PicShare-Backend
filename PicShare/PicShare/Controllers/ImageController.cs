@@ -9,9 +9,9 @@ namespace ImageDesign.Controllers
     [ApiController]
     public class ImageController : ControllerBase
     {
-        private readonly IService<ImageDto> service;
+        private readonly IImageService service;
 
-        public ImageController(IService<ImageDto> service)
+        public ImageController(IImageService service)
         {
             this.service = service;
         }
