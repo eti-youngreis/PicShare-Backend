@@ -5,6 +5,7 @@ namespace Common.Dto
         public int Id { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
-        public string? ProfileImagePath { get; set; }
+        public string? ProfilePictureUrl { get; set; }
     }
 }
+

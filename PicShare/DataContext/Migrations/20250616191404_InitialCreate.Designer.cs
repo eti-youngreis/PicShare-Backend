@@ -6,12 +6,12 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-#nullable disable 
+#nullable disable
 
 namespace DataContext.Migrations
 {
     [DbContext(typeof(MyDataContext))]
-    [Migration("20250610085900_InitialCreate")]
+    [Migration("20250616191404_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -24,7 +24,7 @@ namespace DataContext.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Repository.Entity.Image", b =>
+            modelBuilder.Entity("Repository.Entity.Photo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,7 +32,7 @@ namespace DataContext.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("ImagePath")
+                    b.Property<string>("Url")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -43,7 +43,7 @@ namespace DataContext.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Images");
+                    b.ToTable("Photos");
                 });
 
             modelBuilder.Entity("Repository.Entity.User", b =>
@@ -66,7 +66,7 @@ namespace DataContext.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProfileImagePath")
+                    b.Property<string>("ProfilePictureUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -74,10 +74,10 @@ namespace DataContext.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Repository.Entity.Image", b =>
+            modelBuilder.Entity("Repository.Entity.Photo", b =>
                 {
                     b.HasOne("Repository.Entity.User", "User")
-                        .WithMany("Images")
+                        .WithMany("Photos")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -87,7 +87,7 @@ namespace DataContext.Migrations
 
             modelBuilder.Entity("Repository.Entity.User", b =>
                 {
-                    b.Navigation("Images");
+                    b.Navigation("Photos");
                 });
 #pragma warning restore 612, 618
         }

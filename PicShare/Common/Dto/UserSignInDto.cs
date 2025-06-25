@@ -1,8 +1,7 @@
-﻿namespace Common.Dto
+namespace Common.Dto
 {
-    public class UserSignUpDto
+    public class UserSignInDto
     {
-        public string FullName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
     }

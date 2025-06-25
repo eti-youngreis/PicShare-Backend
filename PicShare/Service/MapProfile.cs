@@ -9,9 +9,9 @@ namespace Service
 
         public MapProfile()
         {
-            CreateMap<Image, ImageDto>();
-            CreateMap<ImageDto, Image>();
-            CreateMap<UserSignupDto, User>();
+            CreateMap<Photo, PhotoResponseDto>();
+            CreateMap<PhotoUploadDto, Photo>();
+            CreateMap<UserSignUpDto, User>();
             CreateMap<User, UserResponseDto>();
         }
     }

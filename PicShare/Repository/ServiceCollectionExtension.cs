@@ -9,7 +9,7 @@ namespace Repository
     {
         public static IServiceCollection AddRepository(this IServiceCollection services)
         {
-            services.AddScoped<IRepository<Image>, ImageRepository>();
+            services.AddScoped<IRepository<Photo>, PhotoRepository>();
             services.AddScoped<IRepository<User>, UserRepository>();
             return services;
         }

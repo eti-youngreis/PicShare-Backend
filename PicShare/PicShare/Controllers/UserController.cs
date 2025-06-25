@@ -23,17 +23,31 @@ namespace PicShare.Controllers
         [HttpGet("GetAll")]
         public async Task<IActionResult> Get()
         {
-            return Ok(await service.GetAllAsync());
+            try
+            {
+                var users = await service.GetAllAsync();
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred while retrieving users: {ex.Message}");
+            }
         }
 
         [HttpPost("SignIn")]
-        public async Task<IActionResult?> SignIn([FromBody] UserLoginDto userLogin)
+        public async Task<IActionResult?> SignIn([FromBody] UserSignInDto userSignIn)
         {
-            return Ok(await service.LoginAsync(userLogin));
+            var token = await service.SignInAsync(userSignIn);
+            if (string.IsNullOrEmpty(token))
+            {
+                return Unauthorized("Invalid email or password.");
+            }
+            return Ok(token);
         }
+
         // POST api/<UserController>
         [HttpPost("SignUp")]
-        public async Task<int?> SignUp([FromBody] UserSignupDto userSignUp)
+        public async Task<int?> SignUp([FromBody] UserSignUpDto userSignUp)
         {
             return (await service.AddAsync(userSignUp))?.Id;
         }
@@ -55,13 +69,7 @@ namespace PicShare.Controllers
         [Authorize]
         public async Task<UserResponseDto?> GetByToken()
         {
-            if (HttpContext.User.Identity is ClaimsIdentity identity)
-            {
-                var userClaim = identity.Claims;
-                var user = await service.GetByIdAsync(int.Parse(userClaim.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)!.Value));
-                return user;
-            }
-            return null;
+            return await service.GetUserFromClaimsAsync(HttpContext.User);
         }
     }
 }

@@ -4,46 +4,42 @@ using Repository.Interfaces;
 
 namespace Repository.Repository
 {
-    public class UserRepository(IContext context) : IRepository<User>
+    public class PhotoRepository(IContext context) : IRepository<Photo>
     {
         private readonly IContext context = context;
 
-        public async Task<User?> AddAsync(User entity)
+        public async Task<Photo?> AddAsync(Photo entity)
         {
-            if (context.Users.Any(x => x.Email == entity.Email))
-            {
-                return null;
-            }
-            await context.Users.AddAsync(entity);
+            await context.Photos.AddAsync(entity);
             await context.Save();
             return entity;
         }
-        public async Task<User?> DeleteByIdAsync(int id)
+        public async Task<Photo?> DeleteByIdAsync(int id)
         {
             var entity = await GetByIdAsync(id);
             if (entity != null)
             {
-                context.Users.Remove(entity);
+                context.Photos.Remove(entity);
                 await context.Save();
             }
             return entity;
 
         }
-        public async Task<List<User>> GetAllAsync()
+
+        public async Task<List<Photo>> GetAllAsync()
         {
-            var x = await context.Users.ToListAsync();
+            return await context.Photos.ToListAsync();
+        }
+
+        public async Task<Photo?> GetByIdAsync(int id)
+        {
+            var x = await context.Photos.FirstOrDefaultAsync(x => x.Id == id);
             return x;
         }
 
-        public async Task<User?> GetByIdAsync(int id)
+        public async Task<Photo?> UpdateAsync(int id, Photo entity)
         {
-            var x = await context.Users.Include(x => x.Photos).FirstOrDefaultAsync(x => x.Id == id);
-            return x;
-        }
-
-        public async Task<User?> UpdateAsync(int id, User entity)
-        {
-            var existingEntity = await context.Users.FindAsync(id);
+            var existingEntity = await context.Photos.FindAsync(id);
             if (existingEntity == null)
             {
                 return null; // Return null if the entity does not exist
@@ -55,7 +51,6 @@ namespace Repository.Repository
             await context.Save(); // Save changes to the database
             return existingEntity; // Return the updated entity
         }
-
 
     }
 }

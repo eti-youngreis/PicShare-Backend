@@ -6,6 +6,6 @@ namespace Common.Dto
     {
         public string? FullName { get; set; }
         public string? Password { get; set; }
-        public IFormFile? ProfileImage { get; set; }
+        public IFormFile? ProfilePicture { get; set; }
     }
 }

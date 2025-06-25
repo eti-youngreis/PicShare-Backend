@@ -7,7 +7,7 @@ namespace DataContext
     public class MyDataContext : DbContext, IContext
     {
         public DbSet<User> Users { get; set; }
-        public DbSet<Image> Images { get; set; }
+        public DbSet<Photo> Photos { get; set; }
 
         public async Task Save()
         {
@@ -15,7 +15,7 @@ namespace DataContext
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"server=(localdb)\MSSQLLocaldb;database=design_image_db;trusted_connection=true;");
+            optionsBuilder.UseSqlServer(@"server=(localdb)\MSSQLLocaldb;database=picshare_db;trusted_connection=true;");
         }
     }
 }
