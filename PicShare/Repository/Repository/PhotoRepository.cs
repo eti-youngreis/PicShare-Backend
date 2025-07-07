@@ -4,7 +4,7 @@ using Repository.Interfaces;
 
 namespace Repository.Repository
 {
-    public class PhotoRepository(IContext context) : IRepository<Photo>
+    public class PhotoRepository(IContext context) : IPhotoRepository
     {
         private readonly IContext context = context;
 
@@ -52,5 +52,12 @@ namespace Repository.Repository
             return existingEntity; // Return the updated entity
         }
 
+        public async Task<List<Photo>> GetByUserIdAsync(int userId)
+        {
+            // Query the database for photos belonging to the specified user
+            return await context.Photos
+                .Where(p => p.UserId == userId)
+                .ToListAsync();
+        }
     }
 }

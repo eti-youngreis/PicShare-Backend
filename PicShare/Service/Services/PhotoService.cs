@@ -9,10 +9,10 @@ namespace Service.Services
 {
     public class PhotoService : IPhotoService
     {
-        private readonly IRepository<Photo> repository;
+        private readonly IPhotoRepository repository;
         private readonly IMapper mapper;
 
-        public PhotoService(IRepository<Photo> repository, IMapper mapper)
+        public PhotoService(IPhotoRepository repository, IMapper mapper)
         {
             this.repository = repository;
             this.mapper = mapper;
@@ -78,6 +78,15 @@ namespace Service.Services
         {
             var photo = await repository.GetByIdAsync(id);
             return mapper.Map<PhotoResponseDto>(photo);
+        }
+
+        public async Task<List<PhotoResponseDto>> GetPhotosByUserIdAsync(int userId)
+        {
+            // Get photos for the specified user directly from the repository
+            var userPhotos = await repository.GetByUserIdAsync(userId);
+            
+            // Map to DTOs and return
+            return mapper.Map<List<PhotoResponseDto>>(userPhotos);
         }
 
         private static async Task<string> UploadPhotoAsync(IFormFile photo)

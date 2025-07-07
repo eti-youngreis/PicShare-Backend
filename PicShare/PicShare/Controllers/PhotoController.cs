@@ -1,7 +1,8 @@
 ﻿using Common.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace PicShare.Controllers
 {
@@ -16,8 +17,8 @@ namespace PicShare.Controllers
             this.service = service;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Get()
+        [HttpGet("all")]
+        public async Task<IActionResult> GetAll()
         {
             var images = await service.GetAllAsync();
             return Ok(images);
@@ -34,8 +35,8 @@ namespace PicShare.Controllers
             return Ok(image);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Post([FromForm] PhotoUploadDto photoUpload)
+        [HttpPost("upload")]
+        public async Task<IActionResult> Upload([FromForm] PhotoUploadDto photoUpload)
         {
             if (photoUpload == null || photoUpload.Photo == null || photoUpload.Photo.Length == 0)
             {
@@ -62,6 +63,27 @@ namespace PicShare.Controllers
                 return NotFound();
             }
             return Ok(deletedImage);
+        }
+
+        [HttpGet("my-photos")]
+        [Authorize] // Ensures the user is authenticated
+        public async Task<IActionResult> GetCurrentUserPhotos()
+        {
+            // Get the authenticated user from the token
+            if (HttpContext.User.Identity is not ClaimsIdentity identity)
+            {
+                return Unauthorized();
+            }
+
+            var userIdClaim = identity.Claims.FirstOrDefault(x => x.Type == "id");
+            if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+            {
+                return Unauthorized();
+            }
+
+            // Retrieve all photos for the current user
+            var photos = await service.GetPhotosByUserIdAsync(userId);
+            return Ok(photos);
         }
     }
 }
